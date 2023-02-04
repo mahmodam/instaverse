@@ -1,7 +1,7 @@
 import axios from "axios";
 
 //const baseUrl = "http://localhost:5000/api";
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "https://instaverse-api.onrender.com" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("user")) {
